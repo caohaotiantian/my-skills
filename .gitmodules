@@ -1,0 +1,6 @@
+[submodule "skills/three-loop-workflow"]
+	path = skills/three-loop-workflow
+	url = https://github.com/caohaotiantian/three-loop-workflow.git
+[submodule "skills/orchestrate"]
+	path = skills/orchestrate
+	url = https://github.com/caohaotiantian/orchestrate.git
