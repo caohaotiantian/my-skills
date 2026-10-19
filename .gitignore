@@ -1,1 +1,4 @@
 .DS_Store
+
+# Local task records and verification output
+.agent/
