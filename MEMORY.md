@@ -1,6 +1,6 @@
 # Project memory
 
-Last reviewed: 2026-10-19.
+Last reviewed: 2026-10-22.
 Scope: this skill collection. Read this file at session entry.
 
 ## User preferences
@@ -13,6 +13,12 @@ Scope: this skill collection. Read this file at session entry.
   Use orchestrate for implementation and three-loop-workflow for non-trivial changes and pre-landing reviews.
   Use the smallest suitable execution structure. Delegation is not mandatory for every task.
   Reuse condition: implementation work under those defaults, subject to host restrictions.
+- Date: 2026-10-22. Source: the user accepted the proposed worktree layout in this session.
+  Default to a sibling `.worktree/<outermost-repository>/<module-path>/<task>` directory outside existing checkouts.
+  Omit the module path for standalone repositories. Preserve nested module paths under the outermost repository.
+  Explain deviations and obtain explicit confirmation before creation. Reuse applicable confirmed exceptions without repeated approval requests.
+  Keep durable rules in AGENTS.md and exception decisions in MEMORY.md, with scope, reason, and source.
+  Reuse condition: new worktrees under these project instructions. No location exception exists in this session.
 
 ## Project lessons
 
@@ -40,6 +46,15 @@ Scope: this skill collection. Read this file at session entry.
 - Date: 2026-10-19. Source: the three-loop release workflow and this session's release checks.
   A pushed version tag triggers the three-loop release archive workflow. Version metadata must match that tag.
   Reuse condition: publish the skill commits before the parent repository's updated submodule references.
+
+- Date: 2026-10-22. Source: local submodule inventories and the revised parallel.md example.
+  The first porcelain worktree entry can identify `.git/modules` metadata for these submodules.
+  Use verified checkout paths instead of that entry as the filesystem anchor.
+  Reuse condition: path selection for submodules and linked worktrees.
+- Date: 2026-10-22. Source: installed-copy synchronization and manifest checks in the worktree-layout task.
+  Keep installation backups outside skill discovery directories, under `~/.local/state/my-skills/backups/`.
+  Verify backup contents before synchronization. Verify installed file sets and bytes against the released source afterward.
+  Reuse condition: authorized local installation updates for this collection.
 
 ## Maintenance
 
