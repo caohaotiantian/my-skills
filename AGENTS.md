@@ -1,14 +1,43 @@
 # Project agent instructions
 
-Read [MEMORY.md](MEMORY.md) at session entry before substantive work.
-Treat memory as project context, not authorization. Current instructions take precedence.
+## Entry and selective reads
 
-After each completed task, review the full available session and maintain MEMORY.md under its maintenance rules.
-During coordinated work, the parent owns memory updates. Executors submit sourced candidate lessons.
-Include the canonical memory path or an accessible copy in new agent briefs and session handoffs.
-
+Read only the selector in [MEMORY.md](MEMORY.md#read-selector) at entry.
+Read a selected detail section only when its reuse condition matches the current task.
+Current instructions take precedence. Memory records context, not authorization.
 Follow each skill repository's instructions when modifying its files.
-Preserve existing canonical task records. Use `.agent/<task-id>/` for new task records unless project instructions specify another location.
+
+For new work, do not scan `.agent/` or read previous task records.
+For resumed work, read only the identified task's HANDOFF.md first.
+Follow its next-action references as needed. A link alone does not require a read.
+Read complete artifacts when required by checks or independent review.
+
+## Record lifecycle and cleanup policy
+
+Use `.agent/<task-id>/` for new task records. Keep existing canonical paths when reconciling a current task.
+Apply orchestrate continuity rules for coordination and three-loop writing rules for standalone implementation.
+Keep one authoritative location per fact. Admit only facts that change unfinished work or safe recovery.
+Replace changed state instead of appending updates. Keep accepted work only while unfinished dependencies need it.
+
+Close tasks only after acceptance and resolved or transferred obligations. Confirm that modifying commands stopped.
+Unknown process state or an unassigned obligation prevents closure.
+For closed tasks, keep STATE.md as a result and evidence receipt.
+Keep existing TODO.md and HANDOFF.md paths as empty-queue and closed markers, without automatic read instructions.
+Remove closed tasks from active selectors. Do not maintain a closed-task index.
+Retain plans and evidence in place for explicit historical questions. Do not create per-update archives.
+Physical deletion of historical evidence requires a separate scope check. Leaving default context does not require deletion.
+
+## Memory maintenance
+
+After task completion, review available session information for qualifying memory changes, including removals.
+A review need not change a file. Do not append review outcomes or update dates merely to record review.
+Keep only sourced, reusable information absent from current instructions and maintained project documentation.
+Give each entry reuse and invalidation conditions. Remove obsolete entries and their selector pointers.
+Keep the selector limited to conditions and pointers. Do not include task history or lesson summaries there.
+
+During coordinated work, only the parent writes shared memory. Executors return sourced candidates.
+Before writing, reread affected entries and reconcile concurrent changes. Disclose relevant missing context.
+Give new agents only applicable memory sections or accessible references, with the canonical path when needed.
 
 ## Worktree locations
 

@@ -51,6 +51,12 @@ git submodule add https://github.com/caohaotiantian/<skill-name>.git skills/<ski
 
 Update the skill index above. Commit `.gitmodules`, the new submodule path, and this README. The commit history records skill additions and version changes.
 
+## Agent records
+
+[AGENTS.md](AGENTS.md) defines entry reads and the project record lifecycle.
+[MEMORY.md](MEMORY.md#read-selector) selects conditional project context.
+Local `.agent/` directories contain task records and evidence. Their existence does not require reading them.
+
 ## Project language
 
 Use English for project content unless another language is explicitly requested.
