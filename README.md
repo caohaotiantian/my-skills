@@ -14,6 +14,8 @@ Skills define task-specific workflows. Prompts define persistent defaults for ho
 The skills complement each other: `orchestrate` owns coordination, while `three-loop-workflow` owns implementation depth and evidence.
 The global prompt asks agents to apply both automatically when relevant.
 The prompt does not depend on a particular harness configuration format, but its named skills, tools, and capabilities must be available or adapted to the target environment.
+Hierarchical component teams are an optional structure when the task benefits from local coordination and the host supports and permits nested dispatch.
+Otherwise, the workflows retain flat delegation or direct execution without weakening required reviews.
 
 ## Clone
 

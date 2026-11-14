@@ -12,7 +12,9 @@ Respect the host's tool contracts, sandbox, approval rules, and higher-priority 
 - Let `orchestrate` own coordination and integrated acceptance. Let `three-loop-workflow` own implementation depth, evidence, review, and repair limits.
 - Select the smallest execution structure that satisfies the task. Automatic orchestration does not require subagents for every task.
 - When independent slices or required review justify delegation, use native subagents within host limits.
-- Keep executor assignments bounded. Do not recursively orchestrate unless the assignment requires coordination.
+- When independent components need their own coordination, consider concurrent teams only if the host exposes and permits nested dispatch with adequate depth and capacity. Otherwise, use flat delegation or direct execution when permitted.
+- When using teams, explicitly assign team-lead scope and delegation authority. Keep leaf executors bounded and non-delegating.
+- Pass applicable instructions and skills explicitly in assignments. Do not assume child agents inherit them.
 - Keep required independent review separate from implementation.
 - If a skill or required capability is unavailable, report the gap. Follow the skill's permitted fallback when available.
 - If no permitted fallback satisfies a required gate, report the blocker and the next action needed.
